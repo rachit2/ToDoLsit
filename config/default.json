@@ -1,0 +1,5 @@
+{
+    "mongoURI":"mongodb+srv://rachit_verma:Gmail8871338693@cluster0.frgo2.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "googleClientId":"831999342823-t1e1bla0t8qtn36ko1ebmn5389hg062k.apps.googleusercontent.com"
+}
