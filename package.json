@@ -16,9 +16,12 @@
     "bcryptjs": "^2.4.3",
     "concurrently": "^7.2.2",
     "config": "^3.3.7",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "express-validator": "^6.14.2",
     "framer-motion": "^6.5.1",
+    "google-auth-library": "^8.1.1",
     "gravatar": "^1.8.2",
     "gravator": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
@@ -27,6 +30,8 @@
     "nodemon": "^2.0.19",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.7",
     "request": "^2.88.2"
   },
   "devDependencies": {

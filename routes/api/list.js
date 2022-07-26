@@ -98,6 +98,12 @@ router.get('/:id', auth,
 // @access   Private
 
 router.put('/:id', (req, res, next) => {
+  
+  console.log('req.params=');
+  console.log(req.params);
+  console.log('req.body=');
+  console.log(req.body);
+
   const list = new List({
     _id: req.params.id,
     title: req.body.title,

@@ -15,10 +15,26 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  /* background: url('./img/2.jpg') no-repeat center center/cover; */
+  background: url('./img/2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
+}
+
+
+#wid-88{
+  width:77%;
+}
+
+#font_s{
+  font-size:36px;
+  margin-right:1rem;
 }
 
 a {
@@ -234,9 +250,16 @@ img {
   height: 100%;
 }
 
+#bg_image{
+  background: url('./img/4.jpg') no-repeat center center/cover;
+
+}
+
 /* Forms */
 .form .form-group {
   margin: 1.2rem 0;
+  width:77%;
+
 }
 
 .form .form-text {
@@ -333,7 +356,9 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  /* background: url('./img/showcase.jpg') no-repeat center center/cover; */
+  background: url('./img/1.jpg') no-repeat center center/cover;
+
   height: 100vh;
 }
 

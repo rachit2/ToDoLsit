@@ -55,12 +55,12 @@ export const deleteTask = (id) => async (dispatch) => {
 };
 
 // Update task
-export const updateTask = (id) => async (dispatch) => {
-  try {
-    await api.put(`/list/${id}`);
+export const updateTask = (id,formData) => async (dispatch) => {
+  try { 
+    await api.put(`/list/${id}`, formData);
     dispatch({
       type: UPDATE_TASK,
-      payload: id
+      payload: formData
     });
     dispatch(setAlert('Task Updated', 'success'));
   } catch (err) {

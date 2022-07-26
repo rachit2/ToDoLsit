@@ -6,11 +6,8 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
-import Profiles from './components/profiles/Profiles';
-import Profile from './components/profile/Profile';
-import Posts from './components/posts/Posts';
-import Post from './components/post/Post';
 import Tasks from './components/tasks/Tasks';
+import TaskForm from './components/task-forms/TaskForm';
 import NotFound from './components/layout/NotFound';
 import PrivateRoute from './components/routing/PrivateRoute';
 import { LOGOUT } from './actions/types';
@@ -49,16 +46,21 @@ const App = () => {
           <Route path="/" element={<Landing />} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
-          <Route path="profiles" element={<Profiles />} />
-          <Route path="profile/:id" element={<Profile />} />
           <Route
             path="dashboard"
             element={<PrivateRoute component={Dashboard} />}
           />
-          <Route path="posts" element={<PrivateRoute component={Posts} />} />
           <Route path="tasks" element={<PrivateRoute component={Tasks} />} />
-
-          <Route path="posts/:id" element={<PrivateRoute component={Post} />} />
+          
+          <Route
+            path="create-task"
+            element={<PrivateRoute component={TaskForm} />}
+          />
+          
+          <Route
+            path="edit-task/*"
+            element={<PrivateRoute component={TaskForm} />}
+          />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Router>

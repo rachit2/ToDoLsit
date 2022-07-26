@@ -10,7 +10,7 @@ const Tasks = ({ getTasks, task: { tasks } }) => {
         useEffect(() => {
           getTasks();
         }, [getTasks]);
-  
+
     return (
       <section className="container">
         <h1 className="large text-primary">Tasks</h1>
